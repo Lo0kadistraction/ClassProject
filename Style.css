@@ -1,50 +1,70 @@
-﻿body {
-}
-header {
-    /*
-            background-color: #002C3E;
-                */
-}
+    .coverimg {
+            background-position: center right;
+            background-size: cover;
+            background-image: url("Images/Cover.jpg");
+            background-repeat: no-repeat;
+            padding: 200px 10px;
+        }
 
-    header::after {
-        content: '';
-        display: table;
-        clear: both;
-    }
+        .menu {
+            display: none;
+        }
 
-nav {
-    width: 100%; /*from above*/
-    height: 38px;
-}
+        body {
+        }
 
-    nav ul {
-        display: block;
-        float: right;
-        list-style: none;
-        font-family: sans-serif;
-        font-size: 12px;
-        margin: 0;
-        padding: 0;
-    }
+        header {
+        }
 
-    nav li {
-        display: inline-block;
-        margin-left: 35px;
-        padding-top: 10px;
-    }
+            header::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
 
-    nav a {
-        /*removing link decoration*/
-        color: #f7f8f3;
-        text-decoration: none;
-    }
+        nav {
+            width: 100%; /*from above*/
+            height: 38px;
+        }
 
-        nav a:hover {
-            background-color: #17b0cf;
-            border: 1px solid #000;
-            /*PAdding for box*/
-            padding-top: 9px;
-            padding-right: 10px;
-            padding-bottom: 13px;
-            padding-left: 10px;
+            nav ul {
+                display: block;
+                float: right;
+                background-color: rgba(0, 42, 62, 0.8);
+                padding-right: 60px;
+                list-style: none;
+                font-family: sans-serif;
+                font-size: 20px;
+                margin: 0;
+            }
+
+            nav li {
+                display: inline-block;
+                margin-left: 35px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            nav a {
+                /*removing link decoration*/
+                color: #f7f8f3;
+                text-decoration: none;
+            }
+
+                nav a:hover {
+                    background-color: #17b0cf;
+                    border: 1px solid #000;
+                    /*PAdding for box*/
+                    padding-top: 9px;
+                    padding-right: 10px;
+                    padding-bottom: 13px;
+                    padding-left: 10px;
+                }
+
+        .topright {
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            font-size: 18px;
+        }
         }
