@@ -12,41 +12,80 @@ Modify your GitHub index page (Web page) to include:
 -->
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" type="text/css" href="Style.css"/>
 
     <title>Class Project</title>
+    <style>
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("Images/Cover.jpg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <!--this somehow put the cover image and page title
+        still need to work out sizeing-->
+    <header class="bgimg" id="home">
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">Competitive<br>Shooting</span>
+        </div>
+
+
+        <!--still need to work out how to get the nav menu on the top of the page
+        -->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="GettingStarted.html">Getting Started</a></li>
+            <li><a href="Equipment.html">Equipment</a></li>
+            <li><a href="Reloading.html">Reloading</a></li>
+            <li><a href="USPSA.html">USPSA</a></li>
+            <li><a href="IDPA.html">IDPA</a></li>
+        </ul>
+    </nav>
+
     <h1>
         <!--Title of web page -->
-        Get to know Christopher McMinn
+        About Me
+
     </h1>
 
     <hr>
 
     <h2>
         <!--intro header -->
-        Welcome to my page!
+
     </h2>
 
     <P>
         <!--Paragraph one-->
+        <!--need to proof read this in word prior to launch-->
         My name is Christopher McMinn, but I prefer to go by CJ. I currently work in the Air Force as a Crew Chief and I have worked on a few different aircraft during my time.
         I recently moved to Shaw, AFB in South Carolina, which in turn assigned me to an F-16 Squadron. Prior to this change, I was on the U-2S Spy Plane and the A-10C Attack aircraft.
-        My major is in computer programming and I am about halfway done with it! I have decided to pursue this as my major because
-        I constantly have the thought that there is an easier, a better, or a more efficient way to complete a task.
-        For example, someone can turn a manual task into a task that can be completed with a simple mouse click, just by writing some code.
+        I created this page to give some information about my favorite hobby competitive shooting and how i got started into it and some things I hae learned along the way to help others
 
     </P>
-
+    <!--remove this prior to launch
     <img src="Images/U-2S.jpg" alt="U-2S" alt="" width="480" height="360">
     <img src="Images/A-10C.png" alt="A-10C" alt="" width="480" height="360">
     <img src="Images/F-16.jpg" alt="F-16CM" alt="" width="480" height="360">
-
-    <h3>
+        -->
+    <h2>
         <!-- paragraph two header -->
-        Hobbies
-    </h3>
+        How I got started in competitive shooting
+    </h2>
     <P>
         <!--Paragraph two -->
         I have more hobbies than I can afford! But currently, I am spending the most of my time and money on competitive shooting in the United States Pistol Association (USPSA).
@@ -57,28 +96,7 @@ Modify your GitHub index page (Web page) to include:
 
     <hr>
 
-    <p>
-        <!--Link 1 USPSA -->
-        Here is the link for USPSA if you interested in looking into it.<br>
-        <a href="https://uspsa.org/">USPSA</a>
-    </p>
 
-    <p>
-        <!--Link two Air force -->
-        Here is the link for Air Force recruiting if your interested in joining the Air Force.<br>
-        <a href="https://www.airforce.com/find-a-recruiter">Air Force Recruiter</a>
-
-    </p>
-
-    <p>
-        <!--Link three aircraft -->
-        Here are the Wiki pages for all three of the aircraft I have worked.<br>
-        <a href="https://en.wikipedia.org/wiki/Lockheed_U-2">U-2S</a>
-        <br>
-        <a href="https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II">A-10C</a>
-        <br>
-        <a href="https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon_variants">F-16CM</a>
-    </p>
 
 </body>
 
