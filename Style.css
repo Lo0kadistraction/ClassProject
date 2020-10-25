@@ -17,6 +17,12 @@ body {
 }
 h1, h2, h3, h4 {
     font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #f7444E;
+    border-top: 1px solid;
+    border-left: 3px solid;
+    padding-left: 1em;
 }
 
 
