@@ -1,20 +1,61 @@
 ﻿<!DOCTYPE html>
+<!--
+20201025 Christopher McMinn
+Unit 5 Applied Mastery Assignment
+
+This week will have you place the finishing touches on the completion of your website--
+
+Design your Mastery Assignment Website according to your Design Document WebSite, with the 5 pages as outlined in Week 3.
+-->
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Getting Started</title>
     <link rel="stylesheet" href="Style.css" />
+    <style>
+        @import url(Style.css);
+        /*these css elements are to enable the two columns on the page*/
+        main {
+            background-color: #F7f8f3;
+            column-count: 2;
+            column-width: 250Px;
+            column-gap: 2em;
+        }
+
+        h1 {
+            column-span: all;
+        }
+
+        p.intro {
+            column-span: all;
+        }
+
+        h2 {
+            break-before: column;
+            -webkit-break-before: always;
+        }
+
+        ol {
+            list-style: circle;
+        }
+
+        li.omitListStyle {
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
     <header class="coverimg" id="home">
         <div class="cover">
+            <!--creates cover image and text-->
             <span style="font-size:90px">Competitive<br>Shooting</span>
         </div>
         <div class="topright">
+            <!--creates nav bar-->
             <nav>
                 <ul>
-                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="https://lo0kadistraction.github.io/ClassProject/">Home</a></li>
                     <li><a href="GettingStarted.html">Getting Started</a></li>
                     <li><a href="Equipment.html">Equipment</a></li>
                     <li><a href="Reloading.html">Reloading</a></li>
@@ -24,12 +65,43 @@
             </nav>
         </div>
     </header>
-    <h1>
-        Getting Started in Competitive Shooting
-    </h1>
-    <h2>
-        Coming Soon...
-    </h2>
+    <main>
+        <h1>
+            Getting Started in Competitive Shooting
+        </h1>
+        <p class="intro">
+            Getting started is easier than you would think first you need to choose which style of pistol competition you would like to participate in. Check out <a href="USPSA.html" .>USPSA</a> and <a href="IDPA.html">IDPA</a> to get some info on that. After that gather some <a href="Equipment.html">Equipment</a>. Then you'll need to find a match, to do this you’ll visit the website of the given origination of your choice. I have provide two step by sections on how to do this.
+        </p>
+        <h2> How to find an USPSA match</h2>
+        <ol>
+            <!--listed steps for USPSA-->
+            <li>First: Navigate to the find club section of <a href="https://uspsa.org/">The USPSA website</a> and select your state.</li>
+            <li class="omitListStyle"><img src="Images/USPSA_Find_Club.png" alt="USPSA Find Club" alt="" width="100%"></li>
+            <li>Second: Once you have selected your state you'll be able to see all of the clubs in your area. I recommend inputing your zip code and then zooming out until you find a club.</li>
+            <li class="omitListStyle"><img src="Images/Find_a_Club.png" alt="Find a Club" alt="" width="100%"></li>
+            <li>Third: Once you have found a club click on that clubs name or title</li>
+            <li class="omitListStyle"><img src="Images/Club_Title Click.png" alt="Club Title Click" alt="" width="100%"></li>
+            <li>Fourth: Once clicked you should see that clubs information you will now need to click on the button that says club website.</li>
+            <li class="omitListStyle"><img src="Images/Club_title_Clicked.png" alt="Club Title Clicked" alt="" width="100%"></li>
+            <li>Fifth: Here we got lucky and this clubs page opened to their competition information. Some clubs do not do this I recommend clicking on their calender to find information about upcoming USPSA events. On this page you can see lots of valuable information. Such as how to get to the match, how to register, and how much it will cost.</li>
+            <li class="omitListStyle"><img src="Images/Club_Page.png" alt="Club Page" alt="" width="100%"></li>
+            <li>Lastly make sure you check out the <a href="https://uspsa.org/rules">Rules</a> then grab up your <a href="Equipment.html">Equipment</a> and head out to your first match. Remember it is always a good idea to let the match director know its your first time.</li>
+        </ol>
+        <h2>
+            How to find an IDPA match
+        </h2>
+        <ol>
+            <!--Listed steps for IDPA-->
+            <li> First: Navigate to the match section of <a href="https://www.idpa.com/matches/">The IDPA website</a></li>
+            <li class="omitListStyle"><img src="Images/IDPA_Match_Screen_1.png" alt="IDPA Match Screen" alt="" width="100%"></li>
+            <li>Second: Find a range near you and click on the quick view button </li>
+            <li class="omitListStyle"><img src="Images/IDPA_Match_Screen_zoom_in.png" alt="IDPA Match Screen Close Up" alt="" width="100%"></li>
+            <li>Third: A window will pop up with lots of valuable information. Such as how to get to the match, how to register, and how much it will cost.</li>
+            <li class="omitListStyle"><img src="Images/MatchPreview.png" alt="IDPA Match Preview" alt="" width="100%"></li>
+            <li>Lastly make sure you check out the <a href="https://www.idpa.com/wp-content/uploads/2018/09/IDPA-Rulebook-2017.pdf">Rules</a> then grab up your <a href="Equipment.html">Equipment</a> and head out to your first match. Remember it is always a good idea to let the match director know its your first time.</li>
+        </ol>
+
+    </main>
 
 </body>
 </html>

@@ -1,20 +1,35 @@
 ﻿<!DOCTYPE html>
+<!--
+20201025 Christopher McMinn
+Unit 5 Applied Mastery Assignment
+
+This week will have you place the finishing touches on the completion of your website--
+
+Design your Mastery Assignment Website according to your Design Document WebSite, with the 5 pages as outlined in Week 3.
+-->
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="Style.css" />
+    <style>
+        @import url(Style.css);
+
+        li {
+            list-style: none;
+        }
+    </style>
     <title>USPSA</title>
 </head>
 <body>
     <header class="coverimg" id="home">
+        <!--this header is the background image and nav links-->
         <div class="cover">
             <span style="font-size:90px">Competitive<br>Shooting</span>
         </div>
         <div class="topright">
             <nav>
                 <ul>
-                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="https://lo0kadistraction.github.io/ClassProject/">Home</a></li>
                     <li><a href="GettingStarted.html">Getting Started</a></li>
                     <li><a href="Equipment.html">Equipment</a></li>
                     <li><a href="Reloading.html">Reloading</a></li>
@@ -25,11 +40,28 @@
         </div>
     </header>
     <h1>
-        USPSA
+        What is USPSA
     </h1>
-    <h2>
-        Coming Soon...
-    </h2>
 
+    <p>
+        When describing a shooting sport it is always better to see it. These videos below do a pretty good job showing you the sport of USPSA. the key takeaways are USPSA is a speed and accuracy sport with several different divisions. The name of the game is how to navigate the course the fastest while being very accurate with your shots. Make sure to check out the <a href="Equipment.html">Equipment</a> page and the <a href="GettingStarted.html">Getting Started</a> page if you would like to try USPSA.
+    </p>
+
+    <ol>
+        <!--I tried to come up with a more elegant solution than this burnt an hour of it not working and said screw it this works.-->
+        <li>
+            <!--this is the video USPSA has on there website-->
+            <div><iframe width="560" height="315" src="https://player.vimeo.com/video/406292716?color=ff0000&title=0&byline=0&portrait=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </li>
+        <li>
+            <!--this is a video that has a pretty good breakdown of the concepts used in USPSA-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Nb__0gW0cCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li>
+            <!--short sweet and to the point-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9kwcxRB-qNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+    </ol>
 </body>
 </html>
