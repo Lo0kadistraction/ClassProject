@@ -1,4 +1,6 @@
-﻿.coverimg {/*this is for the main cover img*/
+﻿
+
+.coverimg { /*this is for the main cover img*/
     background-position: center right;
     background-size: cover;
     background-image: url("Images/Cover.jpg");
@@ -11,7 +13,12 @@
 }
 
 body {
+    font-family: 'Source Sans Pro', sans-serif;
 }
+h1, h2, h3, h4 {
+    font-family: 'Staatliches', cursive;
+}
+
 
 header {
 }
